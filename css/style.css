@@ -1,0 +1,57 @@
+*{
+    margin:2px;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 25px;
+    color: black;
+}
+
+.flex-header {
+    background-color: grey;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main-div {
+    display: flex;
+    flex: 1;
+}
+
+.flex-nav {
+    background-color: yellow;
+    padding-top: 2rem;
+    flex:1 1 5rem;
+}
+
+.content {
+    background-color: red;
+    padding-top: 2rem;
+    flex: 3 3;
+}
+
+.sidebar {
+    background-color: yellow;
+    padding-top: 2rem;
+    flex: 1 1 5rem;
+}
+
+.flex-footer {
+    background-color:grey;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-div {
+        flex-direction: column;
+    }
+
+}
